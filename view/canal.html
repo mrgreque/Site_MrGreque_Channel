@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrGreque | Canal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+		<img src="..\img\logo_mrgreque.png" alt="coffe">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="historia.html">História</a></li>
+			<li><a href="canal.html">Canal</a></li>
+			<li><a href="#">Projetos</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+		<div class="openLogin">
+			<button type="submit" onclick="viewDivLogin()" id="btOpenLogin">Logar</button>
+		</div>
+	</header>
+	<section class="hsection">
+		<div class="container">
+			<a href="https://www.youtube.com/channel/UCKcl2rgbCqK9_njUVfTcUIA/featured"><img src="..\img\mrgrequeytb.png" id="ytb"></a>
+			<p id="sobre"><strong>Sobre: </strong>GAMES, um hobbie, uma paixão, 
+				que pretendo compartilhar com meus vídeos e trazer a esperança de que é possível, 
+				mesmo sem um setup top, se divertir, ser "pro" em algum jogo que curte e poder criar 
+				conteúdo. Os comentários estarão disponíveis para dicas, sugestões, críticas construtivas 
+				e elogios, conto com vocês para conseguir o meu lugar no YouTube. E logo mais LIVES fiquem 
+				atentos. #MrG SE INSCREVA NO CANAL 
+				ASSIM CONSEGUIREMOS TRAZER SEMPRE O MELHOR CONTEÚDO PARA VOCÊS!
+			</p>
+			<div class="videos">
+				<img src="..\img\pubg.jpg" id="video1" onclick="exibition()">
+			</div>
+			
+		</div>
+	</section>
+	<script>
+		var count = 1;
+       	function exibition(){
+	       	if (count == 1) {
+				$(".container div").removeClass('video');
+				$(".container div").addClass('hidden');
+				$(".container").append("<div id='exibicao'><p>Area de videos</p>"+
+					"<iframe width='100%' src='https://www.youtube.com/embed/aN3pPkFqPlc?rel=0&arp;autoplay=1' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+					+"<button onclick='exibition()'>Voltar</button></div>");
+				count = 2;
+	       	} else{
+				$("#exibicao").remove();
+				$(".container div").removeClass('hidden');
+				$(".container div").addClass('video');
+	          	count = 1;
+	       	}
+       	}
+	</script>
+</body>
+</html>
