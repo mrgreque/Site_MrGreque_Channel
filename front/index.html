@@ -19,7 +19,7 @@
 			<li><a href="#">Contato</a></li>
 		</ul>
 		<div class="openLogin">
-			<button type="submit" onclick="viewDivLogin()" id="btOpenLogin">Logar</button>
+			<button type="submit" onclick="viewDivLogin()" class="btn efect">Logar</button>
 		</div>
 	</header>
 	<section>
@@ -62,7 +62,7 @@
 		<p>Para solicitar serviços ligue: (00) 90000-0000</p>
 	</footer>
 	
-     <script>	
+    <script>	
      	function done(){
      		window.location.href = 'done.html';
      	}
@@ -70,17 +70,18 @@
      	var count = 1;
        	function viewDivLogin(){
 	       	if (count == 1) {
-	       		$(".openLogin").append("<div id='floatBlock'><p>Login</p><input type='text' name='login' id='user' placeholder='Digite seu usuario'><br><br><p>Senha</p><input type='password' name='senha' placeholder='Digite sua senha'><br><br><button type='submit' name='logar' onclick='done()'>Entrar</button></div>");
-	       		$("#btOpenLogin").text("Fechar");
+	       		$(".openLogin").append("<div id='floatBlock'><p>Login</p><input type='text' name='login'"+
+					" id='user' placeholder='Digite seu usuario'><br><br><p>Senha</p><input type='password' "+
+					"name='senha' placeholder='Digite sua senha'><br><br><button type='submit' name='logar'"+
+					" onclick='done()'>Entrar</button></div>");
+	       		$(".btn").text("Fechar");
 				count = 2;
 	       	} else{
 	          	$(".openLogin #floatBlock").remove();
-				$("#btOpenLogin").text("Logar");
+				$(".btn").text("Logar");
 	          	count = 1;
 	       	}
        	}
-
-	    
 	</script>
 </body>
 </html>
