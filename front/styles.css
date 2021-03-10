@@ -250,6 +250,7 @@ footer p{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
   }
+
   .btn:hover, .btn:focus {
 	color: #fff;
 	outline: 0;
@@ -265,3 +266,53 @@ footer p{
   .efect:hover {
 	box-shadow: 0 0 10px 0 #d6a812 inset, 0 0 10px 4px #d6a812;
   }
+
+.contato{
+	width: 70vw;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: space-between;
+	text-align: center;
+	/*display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	*/
+}
+
+#formulario{
+	color: white;
+	min-width: 200px;
+	width: 25vw;
+}
+
+#formulario div{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 80%;
+}
+
+#formulario p{
+	font-size: 1.1em;
+}
+
+#formulario div input{
+	width: 74%;
+}
+
+#formulario div p{
+	margin: 0 5px 0 0;
+	text-align: left;
+	width: 22%;
+}
+
+#formulario button{
+	margin: 0 auto;
+}
+
+textarea{
+	width: 100%;
+	height: 100px;
+}
