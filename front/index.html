@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MrGreque | Home</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header class="cabecalho">
+		<img src="..\img\logo_mrgreque.png" alt="coffe">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="historia.html">História</a></li>
+			<li><a href="canal.html">Canal</a></li>
+			<li><a href="contato.html">Projetos</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+		<div class="openLogin">
+			<button type="submit" onclick="viewDivLogin()" class="btn efect">Logar</button>
+		</div>
+	</header>
+	<section>
+		<div class="introducao">
+			<div class="container">
+				<img src="..\img\pubg.jpg" class="imagemFull">
+				<div>
+					<h3>MRGREQUE GAMMING CHANEL</h3>
+					<p>Eae meus queridos como vocês estão? Sejam bem-vindos à esta nova iniciativa do canal MrGreque, que é o nosso siteee pessoal!!
+						Estão curtindo ???? Espero que sim! Bom aqui vocês tem acesso externamente aos videos do canal, estatísticas minhas do PUBG Lite
+						um pouco mais sobre mim, como pessoal, projetos futuros e ainda a oportunidade de entrar em um chat diretamente comigo(falarei
+						disto mais para frente).
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="videos">
+			<div>
+				<p>Video 1</p>
+				<img src="..\img\pubg.jpg" class="imagens">
+			</div>
+			<div>
+				<p>Video 1</p>
+				<img src="..\img\pubg.jpg" class="imagens">
+			</div>
+			<div>
+				<p>Video 1</p>
+				<img src="..\img\pubg.jpg" class="imagens">
+			</div>
+			<div>
+				<p>Video 1</p>
+				<img src="..\img\pubg.jpg" class="imagens">
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>♫ Gabriel Productions ♫</p>
+		<p>Todos os direitos são reservados exclusivamente pelo canal MrGreque</p>
+		<p>Para solicitar serviços ligue: (00) 90000-0000</p>
+	</footer>
+	
+    <script>	
+     	function done(){
+     		window.location.href = 'done.html';
+     	}
+
+     	var count = 1;
+       	function viewDivLogin(){
+	       	if (count == 1) {
+	       		$(".openLogin").append("<div id='floatBlock'><p>Login</p><input type='text' name='login'"+
+					" id='user' placeholder='Digite seu usuario'><br><br><p>Senha</p><input type='password' "+
+					"name='senha' placeholder='Digite sua senha'><br><br><button type='submit' name='logar'"+
+					" onclick='done()'>Entrar</button></div>");
+	       		$(".btn").text("Fechar");
+				count = 2;
+	       	} else{
+	          	$(".openLogin #floatBlock").remove();
+				$(".btn").text("Logar");
+	          	count = 1;
+	       	}
+       	}
+	</script>
+</body>
+</html>

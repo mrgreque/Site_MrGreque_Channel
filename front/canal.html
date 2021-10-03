@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrGreque | Canal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+		<img src="..\img\logo_mrgreque.png" alt="coffe">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="historia.html">História</a></li>
+			<li><a href="canal.html">Canal</a></li>
+			<li><a href="#">Projetos</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+		<div class="openLogin">
+			<button type="submit" onclick="viewDivLogin()" class="btn efect">Logar</button>
+		</div>
+	</header>
+	<section class="hsection">
+		<div class="container">
+			<a href="https://www.youtube.com/channel/UCKcl2rgbCqK9_njUVfTcUIA/featured"><img src="..\img\mrgrequeytb.png" id="ytb" alt="mrgreque/channel"></a>
+			<p id="sobre"><strong>Sobre: </strong>GAMES, um hobbie, uma paixão, 
+				que pretendo compartilhar com meus vídeos e trazer a esperança de que é possível, 
+				mesmo sem um setup top, se divertir, ser "pro" em algum jogo que curte e poder criar 
+				conteúdo. Os comentários estarão disponíveis para dicas, sugestões, críticas construtivas 
+				e elogios, conto com vocês para conseguir o meu lugar no YouTube. E logo mais LIVES fiquem 
+				atentos. #MrG SE INSCREVA NO CANAL 
+				ASSIM CONSEGUIREMOS TRAZER SEMPRE O MELHOR CONTEÚDO PARA VOCÊS!
+			</p>
+			<h3 style="color: white;">Top 4 Vídeos do Canal (Clique para assitir)</h3>
+		</div>
+	</section>
+	<section class="sectionbetween">
+		<div>
+			<img src="..\img\ep3.png" class="videosCanal" onclick="exibition('video1')">
+			<img src="..\img\ep2.jpg" class="videosCanal" onclick="exibition('video1')">
+			<img src="..\img\ep1.jpg" class="videosCanal" onclick="exibition('video1')">
+			<img src="..\img\ep4.png" class="videosCanal" onclick="exibition('video1')">
+		</div>
+		
+	</section>
+    <footer>
+		<p>*Dados atualizados 16/02/2021</p>
+		<p>♫ Gabriel Productions ♫</p>
+		<p>Todos os direitos são reservados exclusivamente pelo canal MrGreque</p>
+		<p>Para solicitar serviços ligue: (00) 90000-0000</p>
+	</footer>
+	<script>
+		var count = 1;
+       	function exibition(id){
+	       	if (count == 1) {
+				if(id == 'video1'){
+					$(".sectionbetween div").toggle();
+					$(".sectionbetween").append("<br><div id='exibicao'>"+
+						"<iframe src='https://www.youtube.com/embed/aN3pPkFqPlc?rel=0&arp;autoplay=1' "+
+						"frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"+
+						" picture-in-picture' allowfullscreen></iframe>"+
+						"<br><br><button class='btn efect' onclick='exibition()'>Voltar</button></div>");
+					count = 2;
+				}
+	       	} else{
+				$(".sectionbetween div").toggle();
+				$("#exibicao").remove();
+	          	count = 1;
+	       	}
+       	}
+	</script>
+</body>
+</html>

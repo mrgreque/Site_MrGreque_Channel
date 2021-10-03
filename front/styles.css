@@ -1,0 +1,318 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+p{
+	color: white;
+}
+
+body{
+	background-color: black;
+}
+
+.cabecalho{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	padding: 30px 0;
+}
+
+.cabecalho img{
+	max-width: 90px;
+	max-height: 90px;
+	margin-left: 10px;
+}
+
+.cabecalho ul{
+	display: flex;
+	list-style: none;
+}
+
+.cabecalho ul li{
+	margin: 0px 10px;
+}
+
+.cabecalho ul li a{
+	color: white;
+	padding: 5px;
+	font-size: 1.2em;
+}
+
+.cabecalho ul li a:hover{
+	border-bottom: 2px solid white;
+}
+
+.openLogin{
+	margin: 0 10px;
+	display: flex;
+	align-items: center;
+}
+
+#floatBlock{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+	height: 40px;
+	align-items: center;
+	font-size: 1.1em;
+	color: white;
+}
+
+#floatBlock button{
+	font-size: 1em;
+	padding: 2px;
+}
+
+#floatBlock input{
+	margin: 0 5px;
+	padding: 2px;
+	font-size: 1.1em;
+	max-width: 150px;
+}
+
+.introducao {
+	display: flex;
+	width: 70vw;
+	margin: 0 auto;
+	padding: 30px 0;
+	color: white;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.imagemFull{
+	width: 440px;
+	height: 240px;
+	min-width: 200px;
+	min-height: 100px;
+}
+
+.container div{
+	text-align: justify;
+	width: 400px;
+	margin-left: 20px;
+}
+
+.container div h3{
+	text-align: center;
+}
+
+.container div p{
+	position: relative;
+	text-align: justify;
+}
+
+.videos{
+	display: flex;
+	flex-wrap: wrap;
+	width: 70vw;
+	margin: 0 auto;
+	padding: 5vh 0;
+	color: white;
+	text-align: center;
+}
+
+.videos div{
+	margin: 0 auto;
+	width: 220px;
+	text-align: center;
+    padding: 5px;
+}
+
+.videos img{
+	max-width: 200px;
+	max-height: 100px;
+}
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding: 5px;
+	color: white;
+}
+
+footer p{
+	margin: 0px 10px;
+}
+
+
+/* HISTORIA */
+.hsection{
+	width: 70vw;
+	display: flex;
+	margin: 0 auto;
+}
+
+.imgHistory{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+
+.hsection p{
+	color: white;
+	position: relative;
+	text-align: justify;
+	width: 500px;
+	margin-left: 20px;
+}
+
+.pleft{
+	color: white;
+	position: relative;
+	text-align: justify;
+	width: 500px;
+	margin-right: 20px;
+}
+
+/*CANAL*/
+
+#ytb{
+	cursor: pointer;
+	max-width: 100%;
+}
+
+#sobre{
+	width: 100%;
+	margin: 10px 0;
+}
+
+.hidden{
+	display: none;
+}
+
+#exibicao{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#exibicao iframe{
+	width: 100%;
+	height: 70vh;
+}
+
+.sectionbetween{
+	width: 70vw;
+	margin: 0 auto;
+}
+
+.sectionbetween div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.videosCanal{
+	margin-top: 10px;
+	width: 200px;
+	height: 100px;
+	cursor: pointer;
+}
+
+.btn {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+	background-color: transparent;
+	border: 2px solid #e74c3c;
+	border-radius: 0.6em;
+	color: #e74c3c;
+	cursor: pointer;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-self: center;
+		-ms-flex-item-align: center;
+			align-self: center;
+	font-size: 0.8rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 20px;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+  }
+
+  .btn:hover, .btn:focus {
+	color: #fff;
+	outline: 0;
+  }
+
+  .efect {
+	border-color: #d6a812;
+	color: #fff;
+	box-shadow: 0 0 40px 40px #d6a812 inset, 0 0 0 0 #d6a812;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+  }
+  .efect:hover {
+	box-shadow: 0 0 10px 0 #d6a812 inset, 0 0 10px 4px #d6a812;
+  }
+
+.contato{
+	width: 70vw;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: space-between;
+	text-align: center;
+	/*display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	*/
+}
+
+#formulario{
+	color: white;
+	min-width: 200px;
+	width: 25vw;
+}
+
+#formulario div{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 80%;
+}
+
+#formulario p{
+	font-size: 1.1em;
+}
+
+#formulario div input{
+	width: 74%;
+}
+
+#formulario div p{
+	margin: 0 5px 0 0;
+	text-align: left;
+	width: 22%;
+}
+
+#formulario button{
+	margin: 0 auto;
+}
+
+textarea{
+	width: 100%;
+	height: 100px;
+}
