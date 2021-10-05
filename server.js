@@ -9,12 +9,17 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-app.set('views', __dirname+'/front');
+app.use(express.static("public") );
+app.set('views', __dirname+'/public');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.get('/', (req, res) => {
     res.render('index');
+});
+
+app.get('/pages/::pg', (req, res) => {
+    res.render(`${req.params.pg}`);
 });
 
 http.listen(port, () => {
