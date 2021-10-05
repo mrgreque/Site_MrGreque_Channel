@@ -15,10 +15,10 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.redirect('/home');
 });
 
-app.get('/pages/::pg', (req, res) => {
+app.get('/:pg', (req, res) => {
     res.render(`${req.params.pg}`);
 });
 
