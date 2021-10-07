@@ -115,7 +115,7 @@ body{
 	text-align: justify;
 }
 
-.videos{
+#videos{
 	display: flex;
 	width: 70vw;
 	margin: 0 auto;
@@ -124,14 +124,14 @@ body{
 	text-align: center;
 }
 
-.videos div{
+#videos div{
 	margin: 0 auto;
 	width: 220px;
 	text-align: center;
     padding: 5px;
 }
 
-.videos img{
+#videos img{
 	max-width: 200px;
 	max-height: 100px;
 }
@@ -216,7 +216,7 @@ footer p{
 	justify-content: space-between;
 }
 
-.videosCanal{
+#videosCanal{
 	margin-top: 10px;
 	width: 200px;
 	height: 100px;
@@ -323,7 +323,7 @@ textarea{
 }
 
 @media (max-width: 1200px) {
-	.videos {
+	#videos {
 		flex-wrap: wrap;
 		width: 55%;
 	}
@@ -331,11 +331,11 @@ textarea{
 
 @media (max-width: 1050px) {
 
-	.videos {
+	#videos {
 		width: 80%;
 	}
 
-	.videos div img {
+	#videos div img {
 		width: 90%;
 	}
 }
@@ -364,17 +364,26 @@ textarea{
 		width: 500px;
 	}
 	
-	.videos {
+	#videos {
 		width: 100%;
 	}
 }
 
 @media (max-width: 675px) {
 
-
 	.cabecalho {
 		display: none;
 	}
+
+	footer {
+		flex-direction: column;
+	}
+
+	footer p {
+		margin: 0.5em auto;
+		font-size: 0.8em;
+	}
+
 }
 
 @media (max-width: 525px) {
@@ -388,4 +397,23 @@ textarea{
 		width: 95%;
 	}
 
+}
+
+@media (max-width: 460px) {
+	#videos div {
+		width: 90%;
+	}
+
+	#videos div p{
+		margin: 0 0 1rem 0;
+	}
+
+	footer {
+		flex-direction: column;
+	}
+
+	footer p {
+		margin: 0.3em auto;
+		font-size: 0.7em;
+	}
 }
